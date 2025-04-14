@@ -1,0 +1,188 @@
+{% extends 'layout.html' %}
+
+{% block title %}Our Products{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Products Hero Section -->
+<section class="page-header products-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h1>Our <span class="highlight">Products</span></h1>
+                <p>Discover our innovative technology solutions designed to meet your business needs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Categories Filters -->
+<section class="product-filters">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <div class="filter-buttons text-center">
+                    <button class="btn filter-btn active" data-filter="all">All Products</button>
+                    <button class="btn filter-btn" data-filter="enterprise">Enterprise Solutions</button>
+                    <button class="btn filter-btn" data-filter="cloud">Cloud Services</button>
+                    <button class="btn filter-btn" data-filter="analytics">Analytics & BI</button>
+                    <button class="btn filter-btn" data-filter="security">Security</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Gallery -->
+<section class="products-gallery">
+    <div class="container">
+        <div class="row product-grid">
+            <!-- SmartHub -->
+            <div class="col-lg-4 col-md-6 product-item enterprise" data-aos="fade-up" id="smart-hub">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="SmartHub" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>SmartHub</h3>
+                        <p class="product-category">Enterprise Solutions</p>
+                        <p>A centralized management solution for all your connected devices and data streams. SmartHub integrates seamlessly with existing infrastructure to provide complete visibility and control.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Centralized Management Console</li>
+                            <li><i class="fas fa-check"></i> Real-time Device Monitoring</li>
+                            <li><i class="fas fa-check"></i> Automated Update Distribution</li>
+                            <li><i class="fas fa-check"></i> Scalable Architecture</li>
+                        </ul>
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary mt-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CloudSync -->
+            <div class="col-lg-4 col-md-6 product-item cloud" data-aos="fade-up" id="cloud-sync">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1484981138541-3d074aa97716" alt="CloudSync" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>CloudSync</h3>
+                        <p class="product-category">Cloud Services</p>
+                        <p>Seamless synchronization across all your devices with enhanced security features. CloudSync ensures your data is always available and protected.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Multi-device Synchronization</li>
+                            <li><i class="fas fa-check"></i> End-to-end Encryption</li>
+                            <li><i class="fas fa-check"></i> Collaboration Tools</li>
+                            <li><i class="fas fa-check"></i> Version Control</li>
+                        </ul>
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary mt-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AnalyticsPlus -->
+            <div class="col-lg-4 col-md-6 product-item analytics" data-aos="fade-up" id="analytics-plus">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1425421669292-0c3da3b8f529" alt="AnalyticsPlus" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>AnalyticsPlus</h3>
+                        <p class="product-category">Analytics & BI</p>
+                        <p>Advanced data analytics platform with AI-powered insights for business intelligence. Turn your data into actionable intelligence with powerful visualization tools.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> AI-Powered Insights</li>
+                            <li><i class="fas fa-check"></i> Custom Dashboard Creation</li>
+                            <li><i class="fas fa-check"></i> Predictive Analytics</li>
+                            <li><i class="fas fa-check"></i> Data Integration Tools</li>
+                        </ul>
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary mt-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SecureVault -->
+            <div class="col-lg-4 col-md-6 product-item security" data-aos="fade-up">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="SecureVault" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>SecureVault</h3>
+                        <p class="product-category">Security</p>
+                        <p>Enterprise-grade security solution for protecting your sensitive data and digital assets. Comprehensive protection against modern cyber threats.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Advanced Threat Detection</li>
+                            <li><i class="fas fa-check"></i> Multi-factor Authentication</li>
+                            <li><i class="fas fa-check"></i> Compliance Reporting</li>
+                            <li><i class="fas fa-check"></i> Real-time Monitoring</li>
+                        </ul>
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary mt-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CloudBackup -->
+            <div class="col-lg-4 col-md-6 product-item cloud" data-aos="fade-up">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407" alt="CloudBackup" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>CloudBackup</h3>
+                        <p class="product-category">Cloud Services</p>
+                        <p>Automated cloud backup solution with rapid recovery capabilities. Ensure business continuity with reliable, secure data protection.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Scheduled Automatic Backups</li>
+                            <li><i class="fas fa-check"></i> Rapid Recovery Options</li>
+                            <li><i class="fas fa-check"></i> Global Data Centers</li>
+                            <li><i class="fas fa-check"></i> Data Integrity Verification</li>
+                        </ul>
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary mt-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BusinessIntelligence -->
+            <div class="col-lg-4 col-md-6 product-item analytics" data-aos="fade-up">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="BusinessIntelligence" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>BusinessIntelligence</h3>
+                        <p class="product-category">Analytics & BI</p>
+                        <p>Comprehensive business intelligence platform that transforms raw data into strategic insights. Make informed decisions with powerful analytics tools.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Interactive Reporting</li>
+                            <li><i class="fas fa-check"></i> KPI Tracking</li>
+                            <li><i class="fas fa-check"></i> Market Analysis Tools</li>
+                            <li><i class="fas fa-check"></i> Competitive Intelligence</li>
+                        </ul>
+                        <a href="{{ url_for('contact') }}" class="btn btn-primary mt-3">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Demo CTA -->
+<section class="product-cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2>Need a customized solution?</h2>
+                <p>Our team of experts can help you find the perfect solution for your business needs.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/products.js') }}"></script>
+{% endblock %}

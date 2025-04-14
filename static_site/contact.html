@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions Inc. - Contact Us</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">TechSolutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center" data-aos="fade-up">
+                        <h1>Contact <span class="highlight">Us</span></h1>
+                        <p>Get in touch with our team to learn more about our products and services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <div class="contact-info">
+                            <h2>Let's Get <span class="highlight">In Touch</span></h2>
+                            <p>We're here to help with any questions you might have about our products, services, or company. Feel free to reach out using the form or contact us directly using the information below.</p>
+                            
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="details">
+                                        <h4>Our Location</h4>
+                                        <p>123 Tech Avenue, San Francisco, CA 94107, United States</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="details">
+                                        <h4>Email Us</h4>
+                                        <p>info@techsolutions.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="details">
+                                        <h4>Call Us</h4>
+                                        <p>+1 (555) 123-4567</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-media">
+                                <h4>Connect With Us</h4>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div class="contact-form-container">
+                            <!-- This form uses Formspree for processing, which works with GitHub Pages -->
+                            <!-- Replace 'YOUR_FORMSPREE_ID' with your actual Formspree form ID -->
+                            <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="_replyto" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email address.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a subject.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="consent" name="consent" required>
+                                    <label class="form-check-label" for="consent">I consent to having this website store my submitted information so they can respond to my inquiry.</label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                                <!-- Success message (hidden by default) -->
+                                <div class="alert alert-success d-none" id="submitSuccessMessage">
+                                    <i class="fas fa-check-circle me-2"></i>Thank you! Your message has been sent successfully.
+                                </div>
+                                <!-- Error message (hidden by default) -->
+                                <div class="alert alert-danger d-none" id="submitErrorMessage">
+                                    <i class="fas fa-times-circle me-2"></i>Oops! There was a problem submitting your form.
+                                </div>
+                                <!-- Submit button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                </div>
+                            </form>
+                            <!-- Note: You'll need to replace 'YOUR_FORMSPREE_ID' with your actual Formspree form ID -->
+                            <p class="text-center mt-3 text-muted"><small>This contact form is powered by <a href="https://formspree.io" target="_blank">Formspree</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-placeholder position-relative" data-aos="fade-up">
+                    <!-- Google Maps Embed (Replace with your actual location) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.90578451436!2d-122.4311522!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1663276257857!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <!-- Map Content Overlay -->
+                    <div class="map-content position-absolute" style="top: 30px; left: 30px;">
+                        <h3>Visit Our Headquarters</h3>
+                        <p>123 Tech Avenue, San Francisco, CA 94107<br>United States</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Locations Section -->
+        <section class="office-locations">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2>Our <span class="highlight">Global Offices</span></h2>
+                    <p>Find us around the world</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="contact-card text-center">
+                            <div class="icon">
+                                <i class="fas fa-building fa-2x"></i>
+                            </div>
+                            <h4>North America</h4>
+                            <p>123 Tech Avenue<br>San Francisco, CA 94107<br>United States</p>
+                            <p><strong>Phone:</strong> +1 (555) 123-4567<br><strong>Email:</strong> usa@techsolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-card text-center">
+                            <div class="icon">
+                                <i class="fas fa-building fa-2x"></i>
+                            </div>
+                            <h4>Europe</h4>
+                            <p>45 Innovation Square<br>London, EC1V 9BR<br>United Kingdom</p>
+                            <p><strong>Phone:</strong> +44 20 7123 4567<br><strong>Email:</strong> europe@techsolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-card text-center">
+                            <div class="icon">
+                                <i class="fas fa-building fa-2x"></i>
+                            </div>
+                            <h4>Asia Pacific</h4>
+                            <p>88 Digital Tower<br>Singapore, 018956<br>Singapore</p>
+                            <p><strong>Phone:</strong> +65 6123 4567<br><strong>Email:</strong> apac@techsolutions.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>TechSolutions Inc.</h5>
+                    <p>Providing innovative technology solutions since 2010. We help businesses transform through technology.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-4">
+                    <p class="copyright">&copy; 2023 TechSolutions Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Contact JavaScript -->
+    <script src="assets/js/contact.js"></script>
+    
+    <script>
+        // Additional contact form handling for Formspree
+        const contactForm = document.getElementById('contactForm');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                if (!contactForm.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    // If using Formspree, this part will handle the form submission
+                    const submitSuccessMessage = document.getElementById('submitSuccessMessage');
+                    const submitErrorMessage = document.getElementById('submitErrorMessage');
+                    
+                    // This is for demo purposes - when using Formspree, the actual redirect happens there
+                    fetch(contactForm.action, {
+                        method: 'POST',
+                        body: new FormData(contactForm),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            // Success
+                            contactForm.reset();
+                            submitSuccessMessage.classList.remove('d-none');
+                            submitErrorMessage.classList.add('d-none');
+                            
+                            // Hide success message after 5 seconds
+                            setTimeout(() => {
+                                submitSuccessMessage.classList.add('d-none');
+                            }, 5000);
+                        } else {
+                            // Error
+                            submitErrorMessage.classList.remove('d-none');
+                            submitSuccessMessage.classList.add('d-none');
+                            
+                            // Hide error message after 5 seconds
+                            setTimeout(() => {
+                                submitErrorMessage.classList.add('d-none');
+                            }, 5000);
+                        }
+                    })
+                    .catch(error => {
+                        // Error
+                        submitErrorMessage.classList.remove('d-none');
+                        submitSuccessMessage.classList.add('d-none');
+                    });
+                    
+                    event.preventDefault(); // Prevent the default form submission
+                }
+                
+                contactForm.classList.add('was-validated');
+            });
+        }
+    </script>
+</body>
+</html>

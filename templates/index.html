@@ -1,0 +1,168 @@
+{% extends 'layout.html' %}
+
+{% block title %}Innovative Technology Solutions{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="hero-title">Transforming Businesses Through <span class="highlight">Technology</span></h1>
+                <p class="hero-subtitle">We deliver cutting-edge solutions that drive growth and innovation for the modern enterprise.</p>
+                <div class="hero-buttons">
+                    <a href="{{ url_for('products') }}" class="btn btn-primary">Our Products</a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Professional team working" class="img-fluid rounded-lg shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="featured-products">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2>Our <span class="highlight">Featured Products</span></h2>
+            <p>Explore our innovative solutions designed to meet your business needs</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="TechSolutions SmartHub" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>SmartHub</h3>
+                        <p>A centralized solution for managing all your connected devices and data streams.</p>
+                        <a href="{{ url_for('products') }}#smart-hub" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1484981138541-3d074aa97716" alt="TechSolutions CloudSync" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>CloudSync</h3>
+                        <p>Seamless synchronization across all your devices with enhanced security features.</p>
+                        <a href="{{ url_for('products') }}#cloud-sync" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1425421669292-0c3da3b8f529" alt="TechSolutions AnalyticsPlus" class="img-fluid">
+                    </div>
+                    <div class="product-body">
+                        <h3>AnalyticsPlus</h3>
+                        <p>Advanced data analytics platform with AI-powered insights for business intelligence.</p>
+                        <a href="{{ url_for('products') }}#analytics-plus" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="{{ url_for('products') }}" class="btn btn-primary">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="home-about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf" alt="Our modern office" class="img-fluid rounded-lg shadow">
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="about-content">
+                    <h2>About <span class="highlight">TechSolutions</span></h2>
+                    <p>Founded in 2010, TechSolutions has been at the forefront of technological innovation, helping businesses transform and adapt to the digital landscape.</p>
+                    <p>Our mission is to deliver cutting-edge technology solutions that empower businesses to achieve their goals and maintain a competitive edge in today's fast-paced market.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Team Members</p>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('about') }}" class="btn btn-outline-primary">More About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2>What Our <span class="highlight">Clients Say</span></h2>
+            <p>Hear from businesses that have transformed with our solutions</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"TechSolutions' SmartHub has completely transformed our operational efficiency. The centralized management system has reduced our overhead by 30%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>CTO, Global Innovations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The AnalyticsPlus platform provided us with insights we never thought possible. Our strategic decisions are now backed by solid data analysis."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Robert Chen</h4>
+                        <p>CEO, DataDrive Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"CloudSync has revolutionized our team collaboration. With employees across three continents, we now work seamlessly as if we're in the same room."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Maria Rodriguez</h4>
+                        <p>Operations Director, Connect Global</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content text-center" data-aos="zoom-in">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Contact us today to learn how our solutions can help you achieve your goals.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
